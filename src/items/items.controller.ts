@@ -17,8 +17,8 @@ export class ItemsController {
   }
 
   @Post()
-  create(@Body() CreateItemDto): Item {
-    return this.itemsService.create(CreateItemDto);
+  create(@Body() createItemDto: CreateItemDto): Item {
+    return this.itemsService.create(createItemDto);
   }
 
   @Patch(':id')
